@@ -1,0 +1,93 @@
+.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: $mobile-width) {
+    padding: 118px 0px;
+    max-width: $mobile-width;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 400px;
+
+    @media screen and (min-width: $desktop-width) {
+      height: 600px;
+    }
+
+    @media not all, (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/mobile/hero@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    @media not all,
+      screen and (min-width: 768px) and (min-resolution: 192dpi),
+      screen and (min-width: 768px) and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/tablet/hero@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    background-color: var(--background-color);
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    @media not all,
+      screen and (min-width: 1200px) and (min-resolution: 192dpi),
+      screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/desktop/herobg@2x.jpg);
+      background-size: cover;
+    }
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text {
+    @media screen and (min-width: $mobile-width) {
+      @include fontProperties(900, 26px, 1.62);
+      height: 84px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: var(--text-color-white);
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      @include fontProperties(900, 26px, 1.16);
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      @include fontProperties(900, 44px, 1.36);
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-color-white);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}

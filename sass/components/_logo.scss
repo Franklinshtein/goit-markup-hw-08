@@ -1,0 +1,27 @@
+.logo {
+  font-family: "Raleway";
+  @include fontProperties(700, 24px, 1.2);
+  color: var(--accent-color);
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+
+  &__color--up {
+    color: var(--primary-text-color);
+  }
+
+  &__color--down {
+    color: var(--text-color-white);
+  }
+
+  @media screen and (min-width: $mobile-width) {
+    padding: 16px 0px;
+  }
+  @media screen and (min-width: $tablet-width) {
+    padding: 0px 0px 16px 0px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 26px;
+    text-align: left;
+  }
+}
