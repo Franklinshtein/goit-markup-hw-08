@@ -28,9 +28,8 @@ img {
 }
 
 .section {
-  @media screen and (min-width: $mobile-width) {
-    padding: 60px 0px;
-  }
+  padding: 60px 0px;
+
   @media screen and (min-width: $tablet-width) {
     padding: 60px 0px;
   }
@@ -41,11 +40,9 @@ img {
 }
 
 .title {
-  @media screen and (min-width: $mobile-width) {
-    @include fontProperties(700, 28px, 1.17);
-    text-align: center;
-    margin-bottom: 30px;
-  }
+  @include fontProperties(700, 28px, 1.17);
+  text-align: center;
+  margin-bottom: 30px;
 
   @media screen and (min-width: $tablet-width) {
     @include fontProperties(700, 28px, 1.17);
@@ -54,7 +51,7 @@ img {
   }
 
   @media screen and (min-width: $desktop-width) {
-    @include fontProperties(900, 44px, 1.36);
+    @include fontProperties(700, 36px, 1.16);
     text-align: center;
     margin-bottom: 50px;
   }
@@ -62,19 +59,25 @@ img {
 
 .flex {
   padding: 0px;
-  @media screen and (max-width: $mobile-width) {
-    display: block;
-  }
+
+  display: block;
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
     padding-left: 0px;
     gap: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
   }
+
   @media screen and (min-width: $desktop-width) {
     display: flex;
     padding-left: 0px;
     gap: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
   }
 
   & li:last-child {

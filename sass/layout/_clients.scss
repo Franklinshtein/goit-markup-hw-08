@@ -11,9 +11,8 @@
 }
 
 .clients__item {
-  @media screen and (min-width: $mobile-width) {
-    flex-basis: calc((100% - var(--gap) * (2 - 1)) / 2);
-  }
+  flex-basis: calc((100% - var(--gap) * (2 - 1)) / 2);
+
   @media screen and (min-width: $tablet-width) {
     flex-basis: calc((100% - var(--gap) * (3 - 1)) / 3);
   }

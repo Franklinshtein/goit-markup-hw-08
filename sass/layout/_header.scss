@@ -2,9 +2,6 @@ header {
   border-bottom: 1px solid #ececec;
   position: relative;
 
-  @media screen and (min-width: $mobile-width) {
-  }
-
   @media screen and (min-width: $tablet-width) {
     @include flexCentr($fl: flex, $ai: center, $jc: null);
     @include fontProperties(500, 14px, 1.14);
@@ -17,13 +14,11 @@ header {
   }
 
   & .container {
-    @media screen and (min-width: $mobile-width) {
-      max-width: 480px;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0 16px;
-    }
+    max-width: 480px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
 
     @media screen and (min-width: $tablet-width) {
       max-width: 768px;
@@ -34,13 +29,13 @@ header {
       @include flexCentr;
     }
     @media screen and (min-width: $desktop-width) {
+      max-width: 1200px;
       @include flexCentr;
+      justify-content: space-between;
     }
   }
 }
 
 .header {
-  @media screen and (min-width: $mobile-width) {
-    display: flex;
-  }
+  display: flex;
 }

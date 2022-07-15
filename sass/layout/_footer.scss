@@ -8,15 +8,14 @@ footer {
 }
 
 .container.footer {
-  @media screen and (min-width: $mobile-width) {
-    max-width: $mobile-width;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-  }
+  max-width: $mobile-width;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+
   @media screen and (min-width: $tablet-width) {
     max-width: $tablet-width;
     display: flex;
@@ -27,18 +26,16 @@ footer {
   }
 }
 .addres__wrapper {
-  @media screen and (min-width: $mobile-width) {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 60px;
-    margin-bottom: 60px;
-  }
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 60px;
+  margin-bottom: 60px;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
@@ -64,10 +61,9 @@ address {
     margin: 0px;
   }
   &__container {
-    @media screen and (min-width: $mobile-width) {
-      margin-left: auto;
-      margin-right: auto;
-    }
+    margin-left: auto;
+    margin-right: auto;
+
     @media screen and (min-width: $desktop-width) {
       max-width: $desktop-width;
       text-align: left;
@@ -87,9 +83,8 @@ address {
   @include fontProperties(700, 14px, 1.14);
   text-transform: uppercase;
   color: var(--text-color-white);
-  @media screen and (min-width: $mobile-width) {
-    text-align: center;
-  }
+  text-align: center;
+
   @media screen and (min-width: $tablet-width) {
     text-align: center;
   }
@@ -99,9 +94,8 @@ address {
   }
 }
 .join-us--subscribe {
-  @media screen and (min-width: $mobile-width) {
-    margin-bottom: -20px;
-  }
+  margin-bottom: -20px;
+
   @media screen and (min-width: $tablet-width) {
     margin-bottom: -20px;
   }
@@ -120,17 +114,16 @@ address {
 }
 
 .subscribe {
-  @media screen and (min-width: $mobile-width) {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
   @media screen and (min-width: $desktop-width) {
     display: block;
     margin-left: 93px;
@@ -141,10 +134,7 @@ address {
   }
 
   &__btn {
-    @media screen and (min-width: $mobile-width) {
-      text-align: center;
-    }
-
+    text-align: center;
     display: inline-flex;
     align-items: center;
     justify-content: center;

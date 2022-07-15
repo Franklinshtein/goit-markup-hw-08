@@ -1,13 +1,12 @@
 .contact {
   color: var(--text-color-gray);
   padding: 0px;
+  display: none;
 
-  @media screen and (min-width: $mobile-width) {
-    display: none;
-  }
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    @include fontProperties(500, 12px, 1.16);
     margin-left: 83px;
   }
   @media screen and (min-width: $desktop-width) {
@@ -16,11 +15,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    @include fontProperties(500, 14px, 1.14);
+    letter-spacing: 0.02em;
   }
 
   &__item {
-    @media screen and (min-width: $mobile-width) {
-    }
     @media screen and (min-width: $tablet-width) {
       display: block;
     }

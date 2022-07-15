@@ -1,12 +1,14 @@
 .menu-open-btn {
-  @media screen and (min-width: $mobile-width) {
-    margin-left: auto;
-    border: none;
-    background-color: transparent;
-    color: none;
-  }
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  color: none;
 
   @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -16,7 +18,7 @@
   display: block;
   margin-top: 21px;
   margin-right: 25px;
-  margin-left: auto;
+  // margin-left: auto;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
@@ -43,18 +45,16 @@
 }
 
 .mob-menu {
-  @media screen and (min-width: $mobile-width) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    background-color: #ffffff;
-    transition-property: opacity, visibility;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: #ffffff;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu.is-hidden {
