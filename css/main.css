@@ -362,14 +362,16 @@ header .container {
   background-position: center;
   background-size: cover;
   padding: 118px 0px;
-  max-width: 480px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-@media not all, (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  @media not all, (min-resolution: 192dpi) {
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 480px;
+  }
+  @media not all, (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero@2x.webp);
       background-size: cover;
