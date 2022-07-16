@@ -56,20 +56,3 @@ img {
     margin-bottom: 50px;
   }
 }
-
-.flex {
-  padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  padding-left: 0px;
-  gap: 30px;
-
-  & li:last-child {
-    margin-right: 0px;
-  }
-  & li:nth-last-child(-n -3) {
-    margin-right: 0px;
-  }
-}

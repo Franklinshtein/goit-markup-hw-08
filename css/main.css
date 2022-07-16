@@ -115,22 +115,6 @@ img {
   }
 }
 
-.flex {
-  padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  padding-left: 0px;
-  gap: 30px;
-}
-.flex li:last-child {
-  margin-right: 0px;
-}
-.flex li:nth-last-child(-n-3) {
-  margin-right: 0px;
-}
-
 .container {
   max-width: 480px;
   width: 100%;
@@ -548,6 +532,22 @@ header .container {
   letter-spacing: 0.03em;
 }
 
+.flex {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  gap: 30px;
+  align-content: center;
+  justify-content: center;
+}
+.flex li:last-child {
+  margin-right: 0px;
+}
+.flex li:nth-last-child(-n-3) {
+  margin-right: 0px;
+}
+
 .about {
   display: none;
   font-size: 14px;
@@ -629,6 +629,22 @@ header .container {
 .team__job {
   text-align: center;
   line-height: 1.18;
+}
+
+.team__flex {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding-left: 0px;
+  gap: 30px;
+}
+.team__flex li:last-child {
+  margin-right: 0px;
+}
+.team__flex li:nth-last-child(-n-3) {
+  margin-right: 0px;
 }
 
 .socials__list {
