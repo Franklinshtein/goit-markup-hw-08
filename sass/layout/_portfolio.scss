@@ -54,12 +54,10 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    width: 450px;
     padding: 0px;
     gap: var(--gap);
 
     @media screen and (min-width: $tablet-width) {
-      min-width: $tablet-width;
       display: flex;
       justify-content: flex-start;
       align-items: stretch;

@@ -59,26 +59,12 @@ img {
 
 .flex {
   padding: 0px;
-
-  display: block;
-
-  @media screen and (min-width: $tablet-width) {
-    display: flex;
-    padding-left: 0px;
-    gap: 30px;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    display: flex;
-    padding-left: 0px;
-    gap: 30px;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding-left: 0px;
+  gap: 30px;
 
   & li:last-child {
     margin-right: 0px;

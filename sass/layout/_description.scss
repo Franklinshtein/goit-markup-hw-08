@@ -2,7 +2,6 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
 
   @media screen and (min-width: $tablet-width) {
     flex-basis: calc((100% - var(--gap) * (2 - 1)) / 2);

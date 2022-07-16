@@ -14,11 +14,11 @@
 }
 
 .close-open-btn {
+  position: absolute;
+  top: 21px;
+  right: 25px;
   fill: black;
   display: block;
-  margin-top: 21px;
-  margin-right: 25px;
-  margin-left: auto;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
@@ -26,10 +26,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.close-open-btn:hover {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .container-mob-menu {
@@ -38,23 +39,33 @@
   justify-content: space-between;
   overflow: auto;
   height: 100%;
-  padding-left: 40px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 48px;
+  padding: 48px 40px;
 }
 
 .mob-menu {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
+  left: -2px;
+  width: calc(100vw + 2px);
   height: 100vh;
   z-index: 1;
   background-color: #ffffff;
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-x: hidden;
+
+  &__contact {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    margin-bottom: 64px;
+    padding: 0px;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .mob-menu.is-hidden {
@@ -70,11 +81,8 @@
   letter-spacing: 0.02em;
 }
 
-.mob-menu__contact {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
-  margin-bottom: 64px;
+.mob-menu__contact--wrapper {
+  margin-bottom: 0px;
 }
 
 .menu-close-icon {
@@ -97,8 +105,8 @@
 
 .mob-socials {
   display: flex;
-  gap: 10px;
-  padding-left: 0px;
+  flex-wrap: wrap;
+  padding: 0px;
 }
 
 .mob-socials--items {
@@ -108,13 +116,15 @@
   color: var(--accent-color);
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.2;
+  margin-top: 10px;
 }
 
-.mob-socials--items:not(:last-child) {
+.mob-socials--border {
+  margin: 10px;
+  width: 1px;
   height: 22px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding: 10px;
 }
 
 .contact__item .contacts__item--tel {
@@ -145,4 +155,8 @@
 
 .mob-menu__nav__link--current {
   color: var(--accent-color);
+}
+
+.mob-menu__nav__list {
+  padding: 0px;
 }
