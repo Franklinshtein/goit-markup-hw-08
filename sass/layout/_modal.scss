@@ -209,3 +209,12 @@
     border-radius: 4px;
   }
 }
+
+.terms__wrapper {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+  }
+}
