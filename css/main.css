@@ -1173,7 +1173,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
-    min-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1220,7 +1219,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .portfolio__list {
-    min-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
