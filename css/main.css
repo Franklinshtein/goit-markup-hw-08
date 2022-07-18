@@ -1135,12 +1135,7 @@ address {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
-  .terms__wrapper {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .terms__wrapper {
     display: flex;
   }
