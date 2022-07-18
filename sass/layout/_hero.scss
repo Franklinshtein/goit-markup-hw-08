@@ -24,7 +24,6 @@
     background-size: cover;
   }
   @media screen and (min-width: $tablet-width) {
-    max-width: 768px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -42,7 +41,6 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    max-width: 1600px;
     height: 600px;
     padding: 200px 0;
     background-image: linear-gradient(
@@ -62,7 +60,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1600px;
+
     margin-left: auto;
     margin-right: auto;
   }
